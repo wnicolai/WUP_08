@@ -1,6 +1,6 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
+author: "Will Nicolai"
 date: "Fall 2020"
 output: html_document
 ---
