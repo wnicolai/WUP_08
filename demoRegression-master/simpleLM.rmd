@@ -15,6 +15,15 @@ knitr::opts_chunk$set(echo = TRUE)
 bears <- read.csv(file="BEARS.csv",header = TRUE)
 ```
 
+```{r include=FALSE}
+require(tidyverse)
+require(tigerstats)
+require(rgl)
+require(knitr)
+if(!require("rglwidget")) {install.packages("rglwidget");require("rglwidget")}
+data(bears)
+bears1 <- na.omit(bears)
+```
 ## Model LENGTH ~ NECK  this is an example  
 
 ```{r}
