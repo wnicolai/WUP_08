@@ -32,7 +32,9 @@ plot(LENGTH~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-
+```{r}
+cor(LENGTH~NECK,data=bears)
+```
 ## now predict the length of a bear who has a neck of 17, 22 and 26
 
 
@@ -41,6 +43,8 @@ new <- data.frame(NECK=c(17,22,26))
 predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
+You can predict that 17 would be about 52.7, 22 would be 60.9 and 26 would be 67.5. roughly.
+
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
 ```{r}
